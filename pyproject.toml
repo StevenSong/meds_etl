@@ -8,6 +8,7 @@ dynamic = ["version"]
 description = "A data standard for working with event stream data"
 readme = "README.md"
 license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
 
 dependencies = [
     "pyarrow >= 8",
@@ -23,6 +24,12 @@ cpp = [
     "meds_etl_cpp == 0.3.4",
 ]
 
+[dependency-groups]
+dev = [
+    "pytest",
+    "flake8",
+    "pre-commit",
+]
 
 [project.scripts]
 meds_etl_mimic = "meds_etl.mimic:main"
