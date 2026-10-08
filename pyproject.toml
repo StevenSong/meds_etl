@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 
 dependencies = [
     "pyarrow >= 8",
-    "polars >= 1.22",
+    "polars>=1.22,<2",
     "jsonschema >= 4.0.0",
     "meds == 0.3.3",
     "typing_extensions >= 4.0",
